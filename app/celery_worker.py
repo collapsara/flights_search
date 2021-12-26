@@ -17,4 +17,6 @@ def flights_search():
     response_a = requests.post("http://app:8000/provider_a/search")
     response_b = requests.post("http://app:8000/provider_b/search")
 
-    return json.loads(response_a.text) + json.loads(response_b.text)
+    response = json.loads(response_a.text) + json.loads(response_b.text)
+
+    return response

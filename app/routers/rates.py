@@ -14,7 +14,7 @@ router = APIRouter()
 
 
 @router.post("/rates")
-def get_rates(db: Session = Depends(get_db)):
+async def get_rates(db: Session = Depends(get_db)):
     today = datetime.now()
     today_string = today.strftime("%d.%m.%Y")
     response = requests.get(f"https://www.nationalbank.kz/rss/get_rates.cfm?fdate={today_string}")

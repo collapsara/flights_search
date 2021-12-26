@@ -12,3 +12,6 @@ def create_rate(db: Session, rate: schemas.RateCreate):
 
 def get_rate_value_by_currency_name(db: Session, currency_name: str):
     return db.query(models.Rate).filter(models.Rate.title == currency_name).first()
+
+def get_rates(db: Session):
+    return db.query(models.Rate).all()

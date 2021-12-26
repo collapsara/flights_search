@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-# flights_search
-=======
 # flights_search
 
-This project was generated via [manage-fastapi](https://ycd.github.io/manage-fastapi/)! :tada:
+Execute project with this commands: \
+`docker-compose build` \
+`docker-compose up -d`
 
-## License
 
-This project is licensed under the terms of the MIT license.
->>>>>>> 0203cb1 (Initial commit')
+You can see all endpoints at this link:
+`http://localhost:8000/docs#/`
