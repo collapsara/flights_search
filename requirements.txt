@@ -1,0 +1,8 @@
+fastapi==0.70.1
+uvicorn==0.16.0
+SQLAlchemy==1.4.17
+psycopg2-binary==2.9.2
+celery==5.2.1
+requests==2.25.1
+redis==3.5.3
+xmltodict==0.12.0
